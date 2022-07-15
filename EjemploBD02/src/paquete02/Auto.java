@@ -29,5 +29,12 @@ public class Auto {
         return valorMatricula;
     }
     
+    @Override
+    public String toString(){
+        String cadena = String.format("Placa: %s\n"
+                + "Valor Matricula: %.2f\n", obtenerPlaca(), 
+                obtenerValorMatricula());
+        return cadena;
+    }
     
 }
